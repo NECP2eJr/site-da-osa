@@ -1,0 +1,252 @@
+<!--
+    Página que possibilita o usuário contatar a empresa para esclarecer dúvidas, sugerir algo ou falar com algum núcleo específico.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Tags de Configuração -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato | Inatel Photonics Chapter</title>
+    <meta name="description"
+          content="Como funciona essa sessao da OSA; Inatel; Eventos relacionados a fibra optica; Telecomunicações; Projetos">
+    <meta name="keywords" content="Inatel, fibra optica, osa, Inatel Photonics Chapter, the optical society, photonics">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 day">
+    <meta name="language" content="Portuguese">
+    <meta name="generator" content="N/A">
+    <meta name="author" content="CP2eJr - Empresa Junior">
+    <meta name="application-name" content="Inatel Photonics Chapter">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Frameworks -->
+    <link href="frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frameworks/bootstrap/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Link das fontes utilizadas -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Link de ícones de redes sociais -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- CSS criados -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contato-style.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Menu de navegação-->
+<div id="menu-navegacao"></div>
+
+<!-- Formulário de contato -->
+<section class="container">
+    <div class="my-5">
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-header accent-1">
+                            <h3 class="mt-2"><i class="fas fa-envelope"></i> Fale conosco: </h3>
+                        </div>
+                        <p class="text-center mx-auto pb-3">Caso tenha alguma demanda não deixe de entrar em
+                            contato. Sinta-se à
+                            vontade para
+                            deixar seu Feedback e
+                            sujestões. Caso haja dúvidas a respeito dos projetos e eventos que a empresa está
+                            participando, nos
+                            deixe saber, responderemos o mais rápido possível. Entre em contato conosco e nos
+                            contrate!</p>
+
+                        <!-- Escolher com quem quer falar -->
+                        <ul class="nav nav-tabs md-tabs nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#painel-geral" role="tab">
+                                    Críticas, Dúvidas ou Sugestões</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#painel-setor" role="tab">
+                                    Falar com um setor</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content pt-0 mt-5">
+                            <div class="tab-pane show active" id="painel-geral">
+                                <form action="php/contato.php" method="POST">
+                                    <input type="hidden" name="tipo" value="geral">
+                                    <div class="form-group row">
+                                        <label for="inputName1" class="col-sm-3 col-form-label">Nome: </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputName1"
+                                                   placeholder="Nome" name="nome" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail1" class="col-sm-3 col-form-label">Email:</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="inputEmail1"
+                                                   placeholder="Email" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPhone1" class="col-sm-3 col-form-label">Telefone:</label>
+                                        <div class="col-sm-9">
+                                            <input type="tel" class="form-control" id="inputPhone1"
+                                                   placeholder="Telefone" name="telefone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputOrganization1"
+                                               class="col-sm-3 col-form-label">Organização:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputOrganization1"
+                                                   placeholder="Organização" name="organizacao">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="selectArea" class="col-sm-3 col-form-label">Área:</label>
+                                        <div class="col-sm-9">
+                                            <select class="custom-select mr-sm-2" id="selectArea" name="area" required>
+                                                <option disabled selected value="">Selecione uma área</option>
+                                                <option value="criticas">Críticas</option>
+                                                <option value="duvidas">Dúvidas</option>
+                                                <option value="sugestoes">Sugestões</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputSubject1" class="col-sm-3 col-form-label">Assunto:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputSubject1"
+                                                   placeholder="Assunto" name="assunto" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputMessage1" class="col-sm-3 col-form-label">Mensagem:</label>
+                                        <div class="col-sm-9">
+                                                <textarea class="form-control" id="inputMessage1" rows="8"
+                                                          name="mensagem" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-light-blue btn-contato">Enviar</button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                            <div class="tab-pane show" id="painel-setor">
+                                <form action="php/contato.php" method="POST">
+                                    <input type="hidden" name="tipo" value="geral">
+                                    <div class="form-group row">
+                                        <label for="inputName2" class="col-sm-3 col-form-label">Nome: </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputName2"
+                                                   placeholder="Nome" name="nome" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail2" class="col-sm-3 col-form-label">Email:</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="inputEmail2"
+                                                   placeholder="Email" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPhone2" class="col-sm-3 col-form-label">Telefone:</label>
+                                        <div class="col-sm-9">
+                                            <input type="tel" class="form-control" id="inputPhone2"
+                                                   placeholder="Telefone" name="telefone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputOrganization2"
+                                               class="col-sm-3 col-form-label">Organização:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputOrganization2"
+                                                   placeholder="Organização" name="organizacao">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="selectDepartment"
+                                               class="col-sm-3 col-form-label">Departamento:</label>
+                                        <div class="col-sm-9">
+                                            <select class="custom-select mr-sm-2" id="selectDepartment"
+                                                    name="departamento" required>
+                                                <option disabled selected value="">Selecione um departamento</option>
+                                                <option value="diretoria">Diretoria</option>
+                                                <option value="gestao-de-projetos">Núcleo de Gestão de Projetos
+                                                </option>
+                                                <option value="gestao-de-eventos">Núcleo de Gestão de Eventos
+                                                </option>
+                                                <option value="comunicacao-e-marketing">Núcleo de Comunicação e
+                                                    Marketing
+                                                </option>
+                                                <option value="recursos-humanos">Núcleo de Recursos Humanos</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputSubject2" class="col-sm-3 col-form-label">Assunto:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputSubject2"
+                                                   placeholder="Assunto" name="assunto" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputMessage2" class="col-sm-3 col-form-label">Mensagem:</label>
+                                        <div class="col-sm-9">
+                                                <textarea class="form-control" id="inputMessage2" rows="8"
+                                                          name="mensagem" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-light-blue btn-contato">Enviar</button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<div id="rodape"></div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="frameworks/jquery/jquery.mask.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="frameworks/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="frameworks/bootstrap/js/mdb.js"></script>
+
+<!-- Scripts criados -->
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/contato.js" type="text/javascript"></script>
+
+</body>
+
+</html>

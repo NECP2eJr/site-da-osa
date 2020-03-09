@@ -1,0 +1,73 @@
+/** Menu Lateral */
+
+#open-sidebar {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background: rgba(0, 11, 67, 0.2);
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+}
+
+#open-sidebar:hover {
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    border-right: 1px solid rgb(0, 11, 67);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #c9c9c9;
+    text-decoration: underline
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav-block{
+    padding-bottom: 30px;
+}
+
+.modal-header{
+    background: rgba(0, 11, 67, 0.9)!important;
+}
+
+.btn-md{
+    background: rgba(0, 11, 67, 0.9)!important;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

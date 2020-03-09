@@ -1,0 +1,164 @@
+<!--
+    Páginas que os usuários poderão acessar para solicitar que o evento seja realizado em sua organização.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Tags de Configuração -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ficha de Interess | Inatel Photonics Chapter</title>
+    <meta name="description"
+          content="Como funciona essa sessao da OSA; Inatel; Eventos relacionados a fibra optica; Telecomunicações; Projetos">
+    <meta name="keywords" content="Inatel, fibra optica, osa, Inatel Photonics Chapter, the optical society, photonics">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 day">
+    <meta name="language" content="Portuguese">
+    <meta name="generator" content="N/A">
+    <meta name="author" content="CP2eJr - Empresa Junior">
+    <meta name="application-name" content="Inatel Photonics Chapter">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Frameworks -->
+    <link href="frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frameworks/bootstrap/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Link das fontes utilizadas -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Link de ícones de redes sociais -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- CSS criados -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ficha-de-interesse-style.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Menu de navegação-->
+<div id="menu-navegacao"></div>
+
+<!-- Ficha de interesse -->
+<section class="container">
+    <div class="my-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 mb-lg-0 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-header accent-1">
+                            <h3 class="mt-2"><i class="fas fa-envelope"></i> Ficha de Interesse: </h3>
+                        </div>
+                        <p class="text-center mx-auto pb-3">Se você se interessou pelo evento selecionado, por favor
+                            preencha o formulário abaixo para que possamos analisar a possibilidade de realizar o evento
+                            em sua instituição.</p>
+
+                        <form action="php/ficha-de-interesse.php" method="POST">
+                            <div class="form-group row">
+                                <label for="inputName" class="col-sm-3 col-form-label">Nome: </label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputName"
+                                           placeholder="Nome" name="nome" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputPhone" class="col-sm-3 col-form-label">Telefone: </label>
+                                <div class="col-sm-9">
+                                    <input type="tel" class="form-control" id="inputPhone"
+                                           placeholder="Telefone" name="telefone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputEmail" class="col-sm-3 col-form-label">Email: </label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail"
+                                           placeholder="Email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputOrganization" class="col-sm-3 col-form-label">Organizacao: </label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputOrganization"
+                                           placeholder="Organizacao" name="organizacao" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="selectEvent"
+                                       class="col-sm-3 col-form-label">Projeto/Evento:</label>
+                                <div class="col-sm-9">
+                                    <select class="custom-select mr-sm-2" id="selectEvent"
+                                            name="evento" required>
+                                        <option disabled selected value="">Selecione um projeto/evento</option>
+                                        <option value="projeto-1">Curso introdutório de Sistemas Fotovoltaicos e Energia Heliotérmica</option>
+                                        <option value="projeto-2">Curso introdutório de Fibras Ópticas</option>
+                                        <option value="projeto-3">Workshop de demonstração de princípios ópticos</option>
+                                        <option value="evento-1">Semana da OSA</option>
+                                        <option value="evento-2">Semanas de curso do Inatel</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputEvaluation" class="col-sm-3 col-form-label">Estimativa de
+                                    Público: </label>
+                                <div class="col-sm-9">
+                                    <input type="number" min="0" class="form-control" id="inputEvaluation"
+                                           placeholder="Estimativa de Público" name="estimativa" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputSubject" class="col-sm-3 col-form-label">Assunto:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="inputSubject"
+                                           placeholder="Assunto" name="assunto" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputMessage" class="col-sm-3 col-form-label">Mensagem:</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" id="inputMessage" rows="8" name="mensagem" 
+                                    required></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-light-blue btn-contato">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<div id="rodape"></div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="frameworks/jquery/jquery.mask.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="frameworks/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="frameworks/bootstrap/js/mdb.js"></script>
+
+<!-- Scripts criados -->
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/ficha-de-interesse.js" type="text/javascript"></script>
+
+</body>
+</html>

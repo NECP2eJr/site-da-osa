@@ -1,0 +1,16 @@
+.form-header{
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    color: white;
+    text-align: center;
+    margin-top: -3.13rem;
+	margin-bottom: 3rem;
+	padding: 1rem;
+	-webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    background: rgb(60, 114, 201);
+}
+
+.btn-contato{
+    background: rgb(60, 114, 201)!important;
+}

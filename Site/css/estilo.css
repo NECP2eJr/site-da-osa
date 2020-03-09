@@ -1,0 +1,66 @@
+/* Estilo css que será comum em todas as páginas*/
+
+/* Instalação de novas fontes */
+
+@font-face {
+    font-family: Bebas;
+    src: url(../font/Bebas.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../font/BebasNeue.ttf);
+}
+
+@font-face {
+    font-family: GothamRounded;
+    src: url(../font/GothamRounded.ttf);
+}
+
+/* Menu de navegação */
+nav{
+    margin-bottom: 0;
+    background:rgb(0, 11, 67);
+    border-radius: 0;
+}
+
+.nav-item.active{
+    background: rgba(33, 49, 111, 1);
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+.nav-item {
+    padding: 0px 4px;
+    border-radius: 4px;
+    margin: 0 16px;
+}
+
+/* Tipografia */
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.no-indent{
+    text-indent: 0;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.blue-text{
+    color:rgb(0, 11, 67)!important;
+}
+
+/* Rodapé do site */
+
+footer {
+    background: rgb(0, 11, 67);
+    line-height: 80%;
+}
+
+.footer-info, .footer-icons{
+    margin: 16px 0 8px 0;
+}

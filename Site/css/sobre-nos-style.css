@@ -1,0 +1,29 @@
+/* Sessão de missão, visão e valores */
+#missao-visao-valores {
+    background: rgba(11, 30, 61, 0.8);
+    padding: 40px;
+}
+
+.circle {
+    width: 120px !important;
+    height: 120px !important;
+}
+
+.modal-header {
+    background: rgba(11, 30, 61, 0.8);
+}
+
+.mvv-icone {
+    width: 120px;
+    height: 120px;
+    padding: 36px 12px;
+}
+
+.label {
+    font-size: 24px;
+}
+
+/* Sessão de card de membros */
+.contato-membro {
+    margin: 32px 0;
+}

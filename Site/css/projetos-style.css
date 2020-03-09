@@ -1,0 +1,17 @@
+/* Card dos projetos */
+.projetos-list {
+    padding: 0;
+    margin: 0;
+}
+
+.projetos-info {
+    padding: 0 10px;
+    list-style: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn-saiba-mais {
+    float: right;
+    color: black;
+}
